@@ -2,18 +2,6 @@ RETRIEVAL
 NO-ACTIVITY-LOG
 DMLIST
 
-*****************************************************************
- The following program is an example of a TCP/IP generic        *
- listener server program written in COBOL.                      *
- The processing is the following:                               *
-  - read a message from the client (first 4 bytes = data length)*
-  - send the message back to the client program                 *
-  - if the message text is equal to "STOP" or if the connection *
-    is closed, then it closes its socket and return to the      *
-    generic listener service.                                   *
-  - if the message text is not equal to "STOP", then it returns *
-    to the generic listener service without closing its socket. *
-*****************************************************************
 
 IDENTIFICATION DIVISION.
 PROGRAM-ID.               COBLIS.
